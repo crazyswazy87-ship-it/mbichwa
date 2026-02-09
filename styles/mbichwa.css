@@ -1,0 +1,515 @@
+:root
+{
+  --gap: 1.25rem;
+  --speed: 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --closed: 5rem;
+  --open: 30rem;
+  --accent: rgb(187, 18, 18);
+  --accentt: rgb(38, 183, 240);
+  --kibla:black;
+  --twy:azure;
+  --waba:rgba(56, 55, 55, 0.2);
+  --wabafisa:rgba(210, 210, 210, 0.319);
+  --ngirafisa:red;
+  --ngirafisaa: rgb(38, 183, 240);
+  --pensil:Verdana, Geneva, Tahoma, sans-serif;
+  --wabling:rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px) saturate(150%);
+      -webkit-backdrop-filter: blur(44px) saturate(100%);
+
+  --gidi:rgba(255, 255, 255, 0.378);
+      backdrop-filter: blur(10px) saturate(150%);
+      -webkit-backdrop-filter: blur(44px) saturate(100%);    
+}*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.b1dy
+{
+  background: var(--kibla);
+}
+
+.b1dy::-webkit-scrollbar
+{
+  display: none;
+}
+
+.heda
+{
+  background-color: greenyellow;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.mbichwa
+{
+  width: 100%;
+  height:100px;
+  position: relative;
+  transform: scale(0.8);
+  border-radius: 15px;
+  cursor: progress;
+}
+
+.heda-active
+{
+  background-color: greenyellow;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.mbichwa-active
+{
+  width: 100%;
+  height:100px;
+  position: relative;
+  border-radius: 15px;
+  cursor: progress;
+  transform: scale(1.1);
+  transition: 3.2s ease-in-out;
+}
+
+.vid-sec
+{
+  margin-top: 105px;
+  position: relative;
+  color: azure;
+  width: 100%;
+  background-color: var(--kibla);
+  height: 350px;
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.vids
+{
+  width: 100%;
+  object-fit: fill;
+}
+
+.d1v ,.d2v
+{
+  height: inherit;
+  border: 2px solid var(--kibla);
+  width: 400px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid gold;
+  object-fit: fill;
+}
+
+.d2v
+{
+  background-image: linear-gradient(to right, gold 5%, greenyellow 90%, gold 5%);
+  font-size: 19px;
+  font-display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+  font-weight: bolder;
+  color: var(--kibla);
+  animation: lap 40s linear infinite;
+}
+
+@keyframes lap
+{
+  0%{background-position: -400px;}
+  100%{background-position: 400px;}
+}
+
+.s3c
+{
+  display: flex;
+  width: 100%;
+  background-color: var(--wabling);
+  position: relative;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-top: -20px;
+  height: auto;
+}
+
+.icon3d
+{
+  width: inherit;
+  height: 100%;
+}
+
+.s3c:hover .icon3d
+{
+  margin-top: -175px;
+  transition: 1.7s;
+}
+
+.njapi
+{
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-color: var(--wabling);
+  position: relative;
+  border-radius: 30px;
+  border: 2px solid greenyellow;
+  display: grid;
+  position: absolute;
+  color: azure;
+  width: 100%;
+  background-color: var(--kibla);
+  gap: 40px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.d3v , .d4v 
+{
+  height: 500px;
+  width: 470px;
+  border: 2px solid var(--wabling);
+  border-radius: 30px;
+  margin-bottom: 10px;
+  display: grid;
+}
+
+.d3v:hover , .d4v:hover
+{
+  content: '';
+  transform: scale(1.03);
+  transition: 1.3s;
+  box-shadow: 1px 6px 15px yellowgreen;
+}
+
+
+.mzee-mzima
+{
+  object-fit: fill;
+  width: 100%;
+  border-radius: inherit;
+  height: inherit;
+}
+
+.des 
+{
+  display: grid;
+  position: absolute;
+  margin-top:x;
+  justify-self: center;
+  align-self: center;
+  font-size: 43px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  gap: 30px;
+  font-weight: bolder;
+  text-wrap: wrap;
+  padding-left: 10px;
+  transition: 1.2s;
+  background-color: transparent;
+  height: 300px;
+  width: 330px;
+  border-radius: 30px;
+}
+
+.des:hover
+{
+  content: '';
+  background-color: var(--gidi);
+}
+
+.digi
+{
+  background-color: greenyellow;
+  height: 40px;
+  width: 130px;
+  justify-self: center;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid var(--wabling);
+  font-size: 21px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+}
+
+.digi:hover
+{
+  content: '';
+  background-color: var(--wabling);
+  transition: 1.2s;
+  font-size: 29px;
+  border: 2px solid greenyellow;
+  color: black;
+  text-shadow: 1px 2px 9px greenyellow;
+  cursor: pointer;
+}
+
+.words
+{
+  text-shadow: 2px 7px 9px greenyellow;
+}
+
+.words:hover
+{
+  color: greenyellow;
+  text-shadow: 2px 13px 9px var(--kibla);
+  transition: 1.9s ease-in-out;
+}
+
+
+@media screen and  (min-width:1100px) {
+.s3c
+{
+  display: flex;
+  width: 100%;
+  background-color: var(--wabling);
+  position: relative;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-top: -20px;
+  height: auto;
+}
+
+.icon3d
+{
+  width: 1300px;
+  height: 100%;
+}
+.s3c:hover .icon3d
+{
+  margin-top: -205px;
+  transition: 1.7s;
+}
+
+.njapi
+{
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-color: var(--wabling);
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 2px solid greenyellow;
+  display: flex;
+  position: absolute;
+  color: azure;
+  width: 100%;
+  background-color: var(--kibla);
+  gap: 40px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.d3v , .d4v 
+{
+  height: 500px;
+  width: 450px;
+  border: 2px solid var(--wabling);
+  border-radius: 30px;
+}
+
+.des 
+{
+  display: grid;
+  position: absolute;
+  margin-top:x;
+  justify-self: center;
+  align-self: center;
+  font-size: 43px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  gap: 30px;
+  font-weight: bolder;
+  text-wrap: wrap;
+  padding-left: 10px;
+  transition: 1.2s;
+  background-color: transparent;
+  height: 300px;
+  width: 190px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.des:hover
+{
+  content: '';
+  background-color: var(--gidi);
+}
+}
+
+@media screen and  (min-width:1250px) {
+.s3c
+{
+  display: flex;
+  width: 100%;
+  background-color: var(--wabling);
+  position: relative;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-top: -20px;
+  height: auto;
+}
+
+.icon3d
+{
+  width: 1400px;
+  height: 100%;
+  transition: 0.6s ease;
+}
+.s3c:hover .icon3d
+{
+  margin-top: -265px;
+  transition: 1.7s;
+}
+
+.njapi
+{
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-color: var(--wabling);
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 2px solid greenyellow;
+  display: flex;
+  position: absolute;
+  color: azure;
+  width: 100%;
+  background-color: var(--kibla);
+  gap: 40px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.d3v , .d4v 
+{
+  height: 500px;
+  width: 450px;
+  border: 2px solid var(--wabling);
+  border-radius: 30px;
+}
+.des 
+{
+  display: grid;
+  position: absolute;
+  margin-top:x;
+  justify-self: center;
+  align-self: center;
+  font-size: 43px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  gap: 30px;
+  font-weight: bolder;
+  text-wrap: wrap;
+  padding-left: 10px;
+  transition: 1.2s;
+  background-color: transparent;
+  height: 300px;
+  width: 230px;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.des:hover
+{
+  content: '';
+  background-color: var(--gidi);
+}
+
+}
+
+@media screen and  (min-width:1450px) {
+.s3c
+{
+  display: flex;
+  width: 100%;
+  background-color: var(--wabling);
+  position: relative;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-top: -20px;
+  height: auto;
+}
+
+.icon3d
+{
+  width: 1500px;
+  height: 100%;
+  transition: 0.9s ease;
+}
+.s3c:hover .icon3d
+{
+  margin-top: -295px;
+  transition: 1.7s;
+}
+
+.njapi
+{
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-color: var(--wabling);
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 2px solid greenyellow;
+  display: flex;
+  position: absolute;
+  color: azure;
+  width: 100%;
+  background-color: var(--kibla);
+  gap: 40px;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.d3v , .d4v 
+{
+  height: 500px;
+  width: 450px;
+  border: 2px solid var(--wabling);
+  border-radius: 30px;
+}
+}
+
+@media screen and  (min-width:1600px) {
+.s3c
+{
+  display: flex;
+  width: 100%;
+  background-color: var(--wabling);
+  position: relative;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-top: -20px;
+  height: auto;
+}
+
+.icon3d
+{
+  width: 1700px;
+  height: 100%;
+  transition: 0.6s ease;
+}
+.s3c:hover .icon3d
+{
+  margin-top: -135px;
+  transition: 1.7s;
+}
+}
